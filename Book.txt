@@ -1,0 +1,40 @@
+package Myfirstproject;
+public class Book {
+    private int noOfCopies; //encapsulation
+    Book(int noOfCopies)//costructor
+    {
+        this.noOfCopies =noOfCopies;
+    }
+    Book(){
+        this(5);
+    }
+    public int getCopies(){
+        return noOfCopies;
+    }
+    public void setCopies (int noOfCopies){
+        System.out.println(noOfCopies);
+        System.out.println(this.noOfCopies);
+        this.noOfCopies =  noOfCopies;
+    }
+    void noOfCopies(int noOfCopies){
+        System.out.println (noOfCopies);
+    System.out.println (this.noOfCopies);
+
+    }
+
+    public static void main(String[] args){
+        Book artOfComputerProgramming = new Book(1000);
+       Book effectiveJava = new Book ();
+        //Book cleanCode = new Book ();
+        //artOfComputerProgramming.setCopies(100);
+        System.out.println(artOfComputerProgramming.getCopies());
+        System.out.println(effectiveJava.getCopies());
+        
+        
+
+       // artOfComputerProgramming.noOfCopies (20);
+       // effectiveJava.noOfCopies (50);
+       // cleanCode.noOfCopies (40);
+    }
+    
+}

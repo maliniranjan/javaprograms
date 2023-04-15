@@ -1,0 +1,17 @@
+$ integer
+--byte,short,int,long \\bytes 1,2,4,8\\-128to+127,-32768 to+32767,-2147483648to+2147483647,- -9223372036854775808,+9223372036854775807
+$floating point
+--float,double\\
+$boolean
+--boolean
+$charater
+--char
+---------------------------------
+indepth
+@literals
+@operators
+@conversion(casting)
+@use them in classes
+articmentic operator = +,-,/,*,%,++,--
+int to long conversion 
+----- i =(int)l;//l = i

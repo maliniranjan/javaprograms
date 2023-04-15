@@ -1,0 +1,10 @@
+import java.util.List;
+public class MethodRunner {
+    public static void print(Integer number){
+        System.out.println(number);
+    }
+    public static void main(String[] args) {
+        
+    
+    List.of("Ant","Batsf" ,"Cat").stream().map(s->s.length()).forEach(s -> System.out.println(s));
+}}

@@ -1,0 +1,25 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+class desc implements Comparator<Student23>{
+  public int compare(Student23 student1 ,Student23 student2){
+    return Integer.compare(student1.getId(),student2.getId());
+  }
+
+}
+public class CollectionsA {
+     public static void main(String[] args) {
+        List <Student23> students = List.of(new Student23(1,"jyoti"),
+        new Student23(23,"dipti"),new Student23(3 ,"niranjan"));
+        System.out.println(students);
+      List<Student23> studentsAl = new ArrayList<>(students);
+      Collections.sort(studentsAl);
+      System.out.println("dsc=" + studentsAl);
+      //Collections.sort(studentsAl , new desc()) ;
+      studentsAl.sort(new desc());
+      System.out.println("Aesc=" + studentsAl);
+
+    }
+    
+}

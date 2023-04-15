@@ -1,0 +1,21 @@
+public class WeekDay {
+    public static void main(String[] args){
+        System.out.println(isWeekDay(0));
+    }   
+    public static String isWeekDay(int daynumber){
+        String result ="";
+        switch(daynumber){
+            case 0:result ="sunday";break;
+            case 1:result = "monday";break;
+            case 2 :result = "tuesday";break;
+            case 3: result = "wednesday";break;
+            case 4: result = "thrusday";break;
+            case 5:result = "friday";break;
+            case 6 :result = "saturday";break;
+            default :result ="invalid";
+
+        }
+        return result;
+        
+    }
+    }

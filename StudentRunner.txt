@@ -1,0 +1,33 @@
+package Myfirstproject.src;
+
+import java.math.BigDecimal;
+
+class StudentRunner
+ {
+    public static void main(String[]args){
+       
+        Student student  = new Student("jyoti", 97,67,36); 
+        Student student1  = new Student("di",  34,45,21); 
+        Student student2  = new Student("ti",  23,13,45); 
+        int number= student.getNumberOfMarks();
+        System.out.println("number of marks:" + number);
+        
+        System.out.println(student);
+
+        int sum =student1.getTotalSumOfMarks();
+        System.out.println("sum of marks: " +sum);
+        int max = student2.getMaximumMarks();
+        System.out.println("max number is:" + max);
+        int min =student.getMinimumMark();
+        System.out.println("min number is:" + min);
+       BigDecimal average = student.getAverageMarks();
+       System.out.println("average number is:" + average);
+       System.out.println(student);
+       student.addNewmark(56);
+       System.out.println(student);
+       student.removeMarkIndex(2);
+       System.out.println(student);
+
+
+    }
+}

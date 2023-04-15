@@ -1,0 +1,9 @@
+package Myfirstproject.src;
+
+public class WhileRunner {
+    public static void main(String[]args){
+        While player = new While(10);
+        player.printSquareUptoLimit();
+        player.printCubesUptoLimit();
+    }    
+}

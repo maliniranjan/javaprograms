@@ -1,0 +1,8 @@
+import java.math.BigDecimal;
+public class SimpleInterestCalRunner{
+    public static void main(String[]args){
+        SimpleInterestCalculater calculator = new SimpleInterestCalculater("5400.00","6.5");
+        BigDecimal totalValue = calculator.calculateTotalValue(6);//year
+        System.out.println(totalValue);//7506.00000
+    }
+}

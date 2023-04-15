@@ -1,0 +1,14 @@
+package Myfirstproject;
+
+public class GameRunner {
+    public static void main(String[] args) {
+        Game[] game2  ={new MarioGame1()  };
+        for (Game game : game2){  
+        game.up();
+        game.down();
+        game.right();
+        game.left();
+    }
+    
+}
+}

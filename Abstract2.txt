@@ -1,0 +1,25 @@
+package Myfirstproject;
+
+public class Abstract2 extends Abstract1 {
+
+    @Override
+    void cleanup() {
+        System.out.println("cleanup the  utnensils");
+    
+        
+    }
+
+    @Override
+    void doTheDish() {
+        System.out.println("do the dish");
+       
+    }
+
+    @Override
+    void getReady() {
+        System.out.println("Get the raw materials");
+        System.out.println("Get the utnensils");
+        
+    }
+    
+}

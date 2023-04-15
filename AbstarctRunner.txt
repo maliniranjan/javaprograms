@@ -1,0 +1,12 @@
+package Myfirstproject;
+
+public class AbstractRunner {
+    public static void main(String[] args) {
+        Abstract2 abstract2 =new Abstract2();
+        abstract2.execute();
+        Abstract3 abstract3 = new Abstract3();
+        abstract3.execute();
+
+    }
+    
+}
